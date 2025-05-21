@@ -1,0 +1,15 @@
+{% extends 'store/main.html' %}
+{% block content %}
+    <div class="box-element" style="align-item:center">
+        <h2>Order Summary</h2>
+        <p>Name: {{ name }}</p>
+        <p>Email: {{ email }}</p>
+        <p>Address: {{ address }}</p>
+        <p>City: {{ city }}</p>
+        <p>State: {{ state }}</p>
+        <p>Phone Number: {{ phone }}</p>
+        <h2>Thanks for your order, {{ name }}!</h2>
+        <p>A confirmation email has been sent to {{ email }}</p>
+        <a class="btn btn-success" href="{% url 'store' %}">Continue Shopping</a>
+    </div>
+{% endblock %}
